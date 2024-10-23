@@ -27,3 +27,8 @@ output "public_key_openssh" {
   description = "The OpenSSH encoded public key of this Key Vault Key"
   value       = azurerm_key_vault_key.this.public_key_openssh
 }
+
+output "version" {
+  description = "The current version of the Key Vault Key"
+  value       = azurerm_key_vault_key.this.version
+}
