@@ -5,6 +5,8 @@ output "keys_resource_ids" {
     resource_versionless_id = kv.resource_versionless_id
     id                      = kv.id
     versionless_id          = kv.versionless_id
+    public_key_pem          = kv.public_key_pem
+    public_key_openssh      = kv.public_key_openssh
     }
   }
 }
