@@ -17,3 +17,13 @@ output "versionless_id" {
   description = "The Base ID of the Key Vault Key"
   value       = azurerm_key_vault_key.this.versionless_id
 }
+
+output "public_key_pem" {
+  description = "The PEM encoded public key of this Key Vault Key"
+  value       = azurerm_key_vault_key.this.public_key_pem
+}
+
+output "public_key_openssh" {
+  description = "The OpenSSH encoded public key of this Key Vault Key"
+  value       = azurerm_key_vault_key.this.public_key_openssh
+}
